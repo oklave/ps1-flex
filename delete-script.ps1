@@ -1,9 +1,9 @@
-$catalog=@("Отдел1"
-           "Отдел2")
+$catalog=@("Catalog1"
+           "Catalog2")
 
 foreach ($catalog in $catalogs)
 {
-Get-ChildItem "X:\Public\тестовый каталог\$catalog\Входящие\*" | Remove-Item -recurse
-Get-ChildItem "X:\Public\тестовый каталог\$catalog\Исходящие\*" | Remove-Item -recurse
-Get-ChildItem "X:\Public\тестовый каталог\$catalog\Разное\*" | Remove-Item -recurse
+Get-ChildItem "X:\Public\тестовый каталог\$catalog\INPUT\*" | Remove-Item -recurse
+Get-ChildItem "X:\Public\тестовый каталог\$catalog\OUTPUT\*" | Remove-Item -recurse
+Get-ChildItem "X:\Public\тестовый каталог\$catalog\ANOTHER\*" | Remove-Item -recurse
 }
