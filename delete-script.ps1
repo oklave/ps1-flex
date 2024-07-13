@@ -1,4 +1,4 @@
-$catalog=@("Catalog1"
+$catalogs=@("Catalog1"
            "Catalog2")
 
 foreach ($catalog in $catalogs)
